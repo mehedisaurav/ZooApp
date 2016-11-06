@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooApp.Models", "ZooApp.Models\ZooApp.Models.csproj", "{884A493C-79E5-4352-B428-7813FF01B67E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooApp.MvcClient", "ZooApp.MvcClient\ZooApp.MvcClient.csproj", "{289FCE6E-91A5-47D6-801B-4532DAFE2BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooApp.Services", "ZooApp.Services\ZooApp.Services.csproj", "{E8002054-50C1-4EF8-AF41-D3F20C9AA0F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooApp.ViewModels", "ZooApp.ViewModels\ZooApp.ViewModels.csproj", "{8C725F85-74CB-444A-B84F-D6CF5D95AAEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{884A493C-79E5-4352-B428-7813FF01B67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{884A493C-79E5-4352-B428-7813FF01B67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{884A493C-79E5-4352-B428-7813FF01B67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289FCE6E-91A5-47D6-801B-4532DAFE2BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289FCE6E-91A5-47D6-801B-4532DAFE2BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289FCE6E-91A5-47D6-801B-4532DAFE2BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289FCE6E-91A5-47D6-801B-4532DAFE2BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8002054-50C1-4EF8-AF41-D3F20C9AA0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8002054-50C1-4EF8-AF41-D3F20C9AA0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8002054-50C1-4EF8-AF41-D3F20C9AA0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8002054-50C1-4EF8-AF41-D3F20C9AA0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C725F85-74CB-444A-B84F-D6CF5D95AAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C725F85-74CB-444A-B84F-D6CF5D95AAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C725F85-74CB-444A-B84F-D6CF5D95AAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C725F85-74CB-444A-B84F-D6CF5D95AAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
