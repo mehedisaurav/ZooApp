@@ -25,10 +25,8 @@ namespace ZooApp.Services
                 {
                     Id = animal.Id,
                     Name = animal.Name,
-                    Food = animal.Food,
                     Origin = animal.Origin,
-                    Quantity = animal.Quantity
-                };
+                   };
                     viewAnimals.Add(viewAnimal);
             }
             return viewAnimals;
@@ -42,10 +40,8 @@ namespace ZooApp.Services
             {
                 Id = animal.Id,
                 Name = animal.Name,
-                Food = animal.Food,
                 Origin = animal.Origin,
-                Quantity = animal.Quantity
-            };
+             };
         }
 
         public bool Save(Animal animal)
