@@ -12,7 +12,7 @@ namespace ZooApp.Services
    public class AnimalService
     {
        ZooContext db = new ZooContext();
-        public List<ViewAnimal> GetAnimals()
+        public List<ViewAnimal> GetAll()
         {
             
 
@@ -21,27 +21,19 @@ namespace ZooApp.Services
 
             foreach (Animal animal in animals)
             {
-                ViewAnimal viewAnimal = new ViewAnimal()
-                {
-                    Id = animal.Id,
-                    Name = animal.Name,
-                    Origin = animal.Origin,
-                   };
+                ViewAnimal viewAnimal = new ViewAnimal(animal);
+                
                     viewAnimals.Add(viewAnimal);
             }
             return viewAnimals;
         }
 
-        public ViewAnimal GetAnimal(int id)
+        public ViewAnimal Get(int id)
         {
            Animal animal = db.Animals.Find(id);
 
-            return new ViewAnimal()
-            {
-                Id = animal.Id,
-                Name = animal.Name,
-                Origin = animal.Origin,
-             };
+            return new ViewAnimal(animal);
+            
         }
 
         public bool Save(Animal animal)
@@ -66,7 +58,7 @@ namespace ZooApp.Services
             return true;
         }
 
-        public Animal GetDbAnimal(int id)
+        public Animal GetDbModel(int id)
         {
             return db.Animals.Find(id);
         }

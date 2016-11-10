@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="AnimalFood.cs" />
+    <Compile Include="Food.cs" />
     <Compile Include="Migrations\201611020630100_InitialCreate.cs" />
     <Compile Include="Migrations\201611020630100_InitialCreate.Designer.cs">
       <DependentUpon>201611020630100_InitialCreate.cs</DependentUpon>
