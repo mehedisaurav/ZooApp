@@ -37,9 +37,10 @@ namespace ZooApp.MvcClient.Controllers
         {
             try
             {
-               bool saved = service.Save(food);
-                if (saved)
+              
+                if (ModelState.IsValid)
                 {
+                    bool saved = service.Save(food);
                     return RedirectToAction("Index");    
                 }
                 return View(food);
@@ -64,9 +65,10 @@ namespace ZooApp.MvcClient.Controllers
             try
             {
                 // TODO: Add update logic here
-                bool updated = service.Update(food);
-                if (updated)
+                
+                if (ModelState.IsValid)
                 {
+                    bool updated = service.Update(food);
                     return RedirectToAction("Index");    
                 }
                 return View(food);

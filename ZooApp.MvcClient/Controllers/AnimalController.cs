@@ -35,8 +35,12 @@ namespace ZooApp.MvcClient.Controllers
         [HttpPost]
         public ActionResult Create(Animal animal)
         {
-            bool saved = animalService.Save(animal);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                bool saved = animalService.Save(animal);
+                return RedirectToAction("Index");    
+            }
+            return View(animal);
         }
         [HttpGet]
         public ActionResult Edit(int id)
@@ -47,8 +51,12 @@ namespace ZooApp.MvcClient.Controllers
         [HttpPost]
         public ActionResult Edit(Animal animal)
         {
-            bool saved = animalService.Update(animal);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                bool saved = animalService.Update(animal);
+                return RedirectToAction("Index");
+            }
+            return View(animal);
         }
         [HttpGet]
         public ActionResult Delete(int id)

@@ -9,6 +9,7 @@ namespace ZooApp.ViewModels
 {
    public class ViewAnimal
     {
+
         public ViewAnimal(Animal animal)
         {
             Id = animal.Id;
